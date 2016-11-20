@@ -14,14 +14,12 @@ import scala.scalajs.js.annotation.JSExport
 import scalacss.Defaults._
 import scalacss.ScalaCssReact._
 
-@JSExport("SPAMain")
+@JSExport
 object SPAMain extends js.JSApp {
 
   // Define the locations (pages) used in this application
   sealed trait Loc
-
   case object DashboardLoc extends Loc
-
   case object TodoLoc extends Loc
 
   // configure the router
@@ -54,7 +52,6 @@ object SPAMain extends js.JSApp {
     )
   }
 
-  @JSExport
   def main(): Unit = {
     log.warn("Application starting")
     // send log messages also to the server

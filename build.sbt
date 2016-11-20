@@ -1,4 +1,3 @@
-import sbt.Keys._
 import sbt.Project.projectToRef
 
 // a special crossProject for configuring a JS/JVM/shared structure
